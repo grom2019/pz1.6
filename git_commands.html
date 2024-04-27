@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comands</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<header class="head">
+    <div>
+      <h1>Мій особистий блог</h1>
+      <h2 class="user-info">Дерен О.В.</h2>
+    </div>
+    <div class="exit">
+      <nav>
+        <ul>
+          <li><a href="login.html">Вхід</a></li>
+          <li><a href="register.html">Реєстрація</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<body>
+  <div style="padding-left: 100px; padding-right: 100px;">
+    <div class="container_CaR">
+        <h1 class="h1_Car">Create a Repository</h1>
+        <p class="p_CaR">From scratch - Create a new local repository</p>
+        <p class="style_text"><b>$ git init [project name]</b></p>
+        <p class="p_CaR">Downioad from an existing reposmory</p>
+        <p class="style_text"><b>$ qit clone my url</b></p>
+
+        <h1 class="h1_Car" style="padding-top: 30px; color: rgb(2, 148, 148);">Observe your Repository</h1>
+        <p class="p_CaR">Ust never moated tes not yet committed </p>
+        <p class="style_text"><b>$ git status</b></p>
+        <p class="p_CaR">Show the charges to tes no yet staged </p>
+        <p class="style_text"><b>$ git diff</b></p>
+        <p class="p_CaR">Show the changes to staged fies</p>
+        <p class="style_text"><b>$ git diff --change</b></p>
+        <p class="p_CaR">Show all staged ano saayate fle changes</p>
+        <p class="style_text"><b>$ git ditt HEAD</b></p>
+        <p class="p_CaR">Show the changes between two commit ids</p>
+        <p class="style_text"><b>$ git diff comitl comit2</b></p>
+        <p class="p_CaR">List the chenge dates and authars. for a file</p>
+        <p class="style_text"><b>$ git blame [file]</b></p>
+        <p class="p_CaR">Show the file changes for a commit id andor file</p>
+        <p class="style_text"><b>$ git show [commit] : [file]</b></p>
+        <p class="p_CaR">Show full change history</p>
+        <p class="style_text"><b>$ git log</b></p>
+        <p class="p_CaR">Show change history for file/directory incucing dits</p>
+        <p class="style_text"><b>$ git log -p [file/directory]</b></p>
+
+
+    </div>
+
+    <div class="container_CaR">
+        <h1 class="h1_Car" style="color: rgb(92, 151, 2);">Working with Branches</h1>
+        <p class="p_CaR">List all locali branches</p>
+        <p class="style_text"><b>$ $ git branch</b></p>
+        <p class="p_CaR">List all branches, local and remote</p>
+        <p class="style_text"><b>$ git branch -av</b></p>
+        <p class="p_CaR">Switch co a branch, my.,branch,
+            and update worting drectory</p>
+        <p class="style_text"><b>$ sit checkout my_branch</b></p>
+        <p class="p_CaR">Create a new branch called new branch</p>
+        <p class="style_text"><b>$ git branch new_branch</b></p>
+        <p class="p_CaR">Delete the branch called my branch</p>
+        <p class="style_text"><b>§ git branch -d my branch</b></p>
+        <p class="p_CaR">Merge branch, a into granch.o</p>
+        <p class="style_text"><b>$ gie checkout branch_b</b></p>
+        <p class="style_text"><b>$ gie merge branch_a</b></p>
+        <p class="p_CaR">Tagshe current commit</p>
+        <p class="style_text"><b>$ sit tag my_tag</b></p>
+    </div>
+
+    <div class="container_CaR"">
+        <h1 class=" h1_Car" style="color: rgb(92, 151, 2);">Make a change</h1>
+        <p class="p_CaR">Stages the file, ready for commit </p>
+        <p class="style_text"><b>$ git add [file]</b></p>
+        <p class="p_CaR">Stage all changed files, ready for commit</p>
+        <p class="style_text"><b>$ git add .</b></p>
+        <p class="p_CaR">Commit all staged files to versioned history </p>
+        <p class="style_text"><b>$ git comit -a "comit message"</b></p>
+        <p class="p_CaR">Commit al, your tracked files to versioned nistory</p>
+        <p class="style_text"><b>§git comit -an "cornit measage"</b></p>
+        <p class="p_CaR">Unstages file, keeping the file changes</p>
+        <p class="style_text"><b>§ git reset [file]</b></p>
+        <p class="p_CaR">Revert everything to the last commit</p>
+        <p class="style_text"><b>$ git reset --hard</b></p>
+    </div>
+
+    <div class="container_CaR">
+        <h1 class=" h1_Car" style="color:rgb(255, 102, 0);">Synchronize</h1>
+        <p class="p_CaR">Get the latest changes from origin (no merge) </p>
+        <p class="style_text"><b>$ git fetch</b></p>
+        <p class="p_CaR">Fetch the latest changes from origin and merge </p>
+        <p class="style_text"><b>$ git pull</b></p>
+        <p class="p_CaR">Fetch the latest changes from origin and rebase</p>
+        <p class="style_text"><b>$ git pull --rebase</b></p>
+        <p class="p_CaR">Push loca changes to the origin</p>
+        <p class="style_text"><b>$ git push</b></p>
+
+        <h1 class=" h1_Car" style="color:rgb(255, 60, 0);">Finally!</h1>
+        <p class="p_CaR">When in doubt use git help</p>
+        <p class="style_text"><b>$ git command --help</b></p>
+        <p class="p_CaR" style="padding-top: 15px;">Or visit <a href="https://training.github.com/" style="font-family: Arial, Helvetica, sans-serif;">https://training.github.com/</a></p>
+
+
+    </div>
+</div>
+</body>
+<footer>
+    <div class="foot">
+      <p>Всі права захищені.</p>
+      <p>Розробник: курсант 213 навчальної групи Дерен О.В.</p>
+    </div>
+  </footer>
+</html>

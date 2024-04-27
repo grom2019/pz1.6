@@ -187,6 +187,7 @@ p {
 }
 .but1{
   font-size: 30px;
+  margin-top: 30px;
   background-color: blue;
 }
 p{
@@ -204,4 +205,65 @@ a{
 }
 a{
   font-size: 30px;
+}
+.contregister {
+  position:absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 700px;
+  padding-bottom: 30px;
+  border: 2px solid rgb(192,192,192); 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.hedregister {
+  padding-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  color: #fff;
+  background-color: blue;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+}
+.formregister {
+
+  text-align: left;
+  font-family: Arial, sans-serif;
+  padding-top: 20px;
+  padding-left: 10%;
+  text-align: left;
+  font-size: 20px;
+}
+.reginput{
+  border: 5px solid blue;
+  padding: 3px;
+  font-size: 30px;
+  width: 80%;
+  height: 10%;
+}
+.style_text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+.container_CaR{ 
+  display: inline-block;
+  vertical-align: top;
+}
+.h1_Car{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: rgb(0, 180, 180);
+}
+
+.p_CaR{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: rgba(134, 134, 134, 0.89);
+  padding-right: 170px;
+  max-width: 300px;
+  font-size: 20px;
 }
