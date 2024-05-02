@@ -120,7 +120,7 @@ p {
   font-size: 20px;
 }
 .batton {
-  padding-top: 15px;
+  
   padding-left: 60%;
 }
 .baton {
@@ -186,8 +186,9 @@ p {
   padding-left: 10px;
 }
 .but1{
-  font-size: 30px;
-  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 10px;
+  margin-top: 10px;
   background-color: blue;
 }
 p{
