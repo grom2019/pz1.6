@@ -7,6 +7,8 @@ function reverseAndSquare(arr) {
     
     return squaredArr;
 }
+//перевірка
+
 
 // Приклад виклику функції
 const inputArray = [1, 2, 3, 'a', 'b', 'c'];
