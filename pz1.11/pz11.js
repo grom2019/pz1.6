@@ -3,6 +3,8 @@ function removeDuplicates(arr) {
 }
 
 // Приклад виклику функції
-const inputArray = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6];
-const result = removeDuplicates(inputArray);
-console.log(result); // Результат: [1, 2, 4, 5, 7, 8, 3, 6]
+const inputtArray = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6];
+console.log("Вхідний масив:", inputtArray);
+const result2 = removeDuplicates(inputtArray);
+console.log("Результат (без дублікатів):", result2);
+

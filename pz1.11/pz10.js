@@ -1,16 +1,24 @@
-function reverseAndSquare(arr) {
+function reverseAndSquareArray(arr) {
     // Перевертаємо масив
-    const reversedArr = arr.reverse();
-    
-    // Підносимо до квадрату числові значення
-    const squaredArr = reversedArr.map(item => typeof item === 'number' ? item ** 2 : item);
-    
-    return squaredArr;
+    const reversedArray = arr.reverse();
+
+    // Підносимо до квадрату числові значення та залишаємо інші значення без змін
+    const squaredArray = reversedArray.map(item => {
+        if (typeof item === 'number') {
+            return item ** 2; // Підносимо до квадрату, якщо число
+        } else {
+            return item; // Залишаємо без змін, якщо не число
+        }
+    });
+
+    // Перевертаємо результат
+    const reversedResult = squaredArray.reverse();
+
+    return { inputArray: arr, resultArray: reversedResult };
 }
-//перевірка
 
-
-// Приклад виклику функції
-const inputArray = [1, 2, 3, 'a', 'b', 'c'];
-const result = reverseAndSquare(inputArray);
-console.log(result); // Результат: [9, 4, 1, "b", "a", "c"]
+// Приклад використання
+const inputArray = [1.5, 2, 3, 'a', 'b', 4];
+const { inputArray: input, resultArray: result } = reverseAndSquareArray(inputArray);
+console.log("Вхідний масив:", input);
+console.log("Результат :", result);

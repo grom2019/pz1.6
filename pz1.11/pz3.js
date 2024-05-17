@@ -12,5 +12,6 @@ function fizzBuzz(n) {
     }
 }
 
-// Приклад для числа n = 15
-fizzBuzz(15);
+// Отримуємо введене користувачем число 
+const n = parseInt(prompt('Будь ласка, введіть число для запуску FizzBuzz: '));
+fizzBuzz(n);
