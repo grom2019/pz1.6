@@ -36,17 +36,10 @@ function ChessBoard(rows, cols) {
 function getBoardSize() {
     let rows = parseInt(prompt("Введіть кількість рядків:", "8"));
     let cols = parseInt(prompt("Введіть кількість стовпців:", "8"));
-
-    // Перевірка, чи введені значення є коректними числами
-    if (isNaN(rows) || isNaN(cols) || rows <= 0 || cols <= 0) {
-        alert("Будь ласка, введіть коректні числові значення.");
-        return null;
-    }
-
     return { rows: rows, cols: cols };
 }
 
-// Отримати розміри дошки від користувача і створити дошку
+
 let size = getBoardSize();
 if (size) {
     let board = new ChessBoard(size.rows, size.cols);
